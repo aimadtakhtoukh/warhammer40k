@@ -2,9 +2,17 @@
 
   <md-content>
     <header ng-include="'app/components/navbar/navbar.html'"></header>
-
+    <div class="centerCards">
+      <md-card>
+        <md-input-container>
+          <label>Name</label>
+          <input ng-model="user.name">
+        </md-input-container>
+      </md-card>
+    </div>
     <section class="jumbotron">
-      <h1>'Allo, 'Allo!</h1>
+      <h1>'Allo, 'Allo! {{user.name}}</h1>
+      <p ng-if="user.name == 'Aimad'">Nice to see you again!</p>
       <p class="lead">
         <img src="assets/images/yeoman.png" alt="I'm Yeoman"><br>
         Always a pleasure scaffolding your apps.
