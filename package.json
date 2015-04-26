@@ -1,16 +1,13 @@
 {
   "name": "warhammer40k",
   "version": "0.0.1",
-  "dependencies": {
-    "gulp": "~3.8.10",
-    "bower": "0.9.2"
-  },
   "scripts": {
     "test": "gulp test",
     "start": "gulp serve",
     "postinstall" : "bower install && gulp default"
   },
-  "devDependencies": {
+  "dependencies": {
+    "bower": "0.9.2",
     "gulp": "~3.8.10",
     "gulp-autoprefixer": "~2.1.0",
     "gulp-angular-templatecache": "~1.5.0",
