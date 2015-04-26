@@ -5,3 +5,4 @@ bower_components/
 dist/
 .idea/
 .editorconfig
+npm-debug.log
