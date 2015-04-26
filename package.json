@@ -1,7 +1,10 @@
 {
   "name": "warhammer40k",
   "version": "0.0.1",
-  "dependencies": {},
+  "dependencies": {
+    "gulp": "~3.8.10",
+    "bower": "0.6.x"
+  },
   "scripts": {
     "test": "gulp test",
     "start": "gulp serve",

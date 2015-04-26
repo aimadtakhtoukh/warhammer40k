@@ -7,7 +7,7 @@
 6 info start warhammer40k@0.0.1
 7 verbose unsafe-perm in lifecycle true
 8 info warhammer40k@0.0.1 Failed to exec start script
-9 verbose stack Error: warhammer40k@0.0.1 start: `node server.js`
+9 verbose stack Error: warhammer40k@0.0.1 start: `node warhammer40k.js`
 9 verbose stack Exit status 1
 9 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
 9 verbose stack     at EventEmitter.emit (events.js:110:17)
@@ -22,13 +22,13 @@
 14 error node v0.12.2
 15 error npm  v2.7.4
 16 error code ELIFECYCLE
-17 error warhammer40k@0.0.1 start: `node server.js`
+17 error warhammer40k@0.0.1 start: `node warhammer40k.js`
 17 error Exit status 1
-18 error Failed at the warhammer40k@0.0.1 start script 'node server.js'.
+18 error Failed at the warhammer40k@0.0.1 start script 'node warhammer40k.js'.
 18 error This is most likely a problem with the warhammer40k package,
 18 error not with npm itself.
 18 error Tell the author that this fails on your system:
-18 error     node server.js
+18 error     node warhammer40k.js
 18 error You can get their info via:
 18 error     npm owner ls warhammer40k
 18 error There is likely additional logging output above.
