@@ -3,12 +3,16 @@
 angular.module('warhammer40k', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngResource', 'ngRoute', 'ngMaterial'])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
+      .when('/rule', {
         templateUrl: 'app/main/main.html',
-        controller: 'MainCtrl'
+        controller: 'MainRuleCtrl'
+      })
+      .when('/rule/:id', {
+        templateUrl : 'app/rule/ruleDetails.html',
+        controller:'RuleDetailsCtrl'
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/rule'
       });
   })
 ;

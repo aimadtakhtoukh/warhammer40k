@@ -1,0 +1,18 @@
+<div layout="vertical" layout-fill>
+
+  <md-content>
+    <header ng-include="'app/components/navbar/navbar.html'"></header>
+
+    <div class="techs" layout-align="center">
+      <md-whiteframe class="md-whiteframe-z5" layout layout-align="center center">
+          <div class="caption">
+            <h3>{{rule.name}}</h3>
+            <p>{{rule.description}}</p>
+          </div>
+          <p>{{rule.codex}}, page {{rule.page}}</p>
+      </md-whiteframe>
+    </div>
+
+  </md-content>
+
+</div>
