@@ -1,17 +1,20 @@
-<div layout="vertical" layout-fill>
+<div layout="column" layout-fill>
 
   <md-content>
     <header ng-include="'app/components/navbar/navbar.html'"></header>
-    <div layout-align="center">
-      <md-list>
-        <md-list-item ng-repeat="rule in rules | orderBy:'id'" ng-click="showRule(rule.id)">
-            <div class="md-list-item-text">
-              <h3>{{rule.name}}</h3>
+
+    <h1 layout="row" layout-align="center start">Règles</h1>
+
+    <div layout="row" layout-sm="column" layout-wrap>
+      <md-card class="rule-card" flex=33"
+               ng-repeat="rule in rules | orderBy:'id'"
+               ng-click="showRule(rule.id)">
+            <md-card-content>
+              <h3 layout="column" layout-align="start center">{{rule.name}}</h3>
               <p>{{rule.description}}</p>
               <p>{{rule.codex}}</p>
-            </div>
-        </md-list-item>
-      </md-list>
+            </md-card-content>
+      </md-card>
     </div>
   </md-content>
 

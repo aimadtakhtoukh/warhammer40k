@@ -1,5 +1,4 @@
 'use strict';
-
 angular.module('warhammer40k', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngResource', 'ngRoute', 'ngMaterial'])
   .config(function ($routeProvider) {
     $routeProvider
@@ -14,5 +13,14 @@ angular.module('warhammer40k', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize
       .otherwise({
         redirectTo: '/rule'
       });
+  })
+;
+
+angular.module('warhammer40k')
+  .config(function($mdThemingProvider) {
+    $mdThemingProvider.theme('default')
+      .primaryPalette('grey')
+      .accentPalette('grey')
+    ;
   })
 ;

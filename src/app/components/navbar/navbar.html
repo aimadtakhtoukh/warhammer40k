@@ -1,15 +1,15 @@
-<md-toolbar layout="row" layout-align="center center" ng-controller="NavbarCtrl">
+<md-toolbar layout="row" layout-align="start center" ng-controller="NavbarCtrl">
+  <md-button class="md-toolbar-tools md-accent" href="/">
+    <img src="/assets/images/Warhammer40000Logo.gif"
+    alt="Warhammer 40000"
+    class = "navbar-image"/>
+  </md-button>
 
-  <md-button href="/">Warhammer40k</md-button>
-
-  <section flex layout="row" layout-align="left center">
-    <md-button href="#" class="md-raised">Home</md-button>
-    <!--
-    <md-button href="#" class="md-raised">About</md-button>
-    <md-button href="#" class="md-raised">Contact</md-button>
-    -->
-  </section>
-
-  <md-button href="#">Current date: {{ date | date:'dd-MM-yyyy' }}</md-button>
+  <md-select flex layout-margin placeholder="Rules" ng-model="dropdownModel">
+    <md-option ng-value="readAllRules" ng-click="showRules()">Read All</md-option>
+  </md-select>
+  <md-select flex layout-margin placeholder="Equipments" ng-model="dropdownModel">
+    <md-option ng-value="readAllRules" ng-click="showRules()">Read All</md-option>
+  </md-select>
 
 </md-toolbar>

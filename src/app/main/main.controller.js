@@ -12,5 +12,5 @@ angular.module('warhammer40k')
 
     $scope.showRule = function(id) {
       $location.path('/rule/' + id);
-    }
+    };
   });

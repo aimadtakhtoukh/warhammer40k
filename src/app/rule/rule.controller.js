@@ -9,6 +9,8 @@ angular.module('warhammer40k')
     $http.get('/rule/rest/' + id).success(
       function(data) {
         $scope.rule = data;
+        $scope.rule.reference = rule.codex + ', page' + rule.page;
       }
     );
   });
+
