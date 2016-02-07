@@ -6,3 +6,4 @@ dist/
 .idea/
 .editorconfig
 npm-debug.log
+*.iml
